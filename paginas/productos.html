@@ -5,71 +5,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlace">
-            <img src="../imagenes/Fondo gris letra violeta.png" alt="" class="logo">
-        </a>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a class="active" href="#">Productos</a></li>
-            <li><a href="./proximatemporada.html">Proxima Temporada</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <main class="contenedor productos" id="productos">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SoHer Calzados</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SOHER</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./proximatemporada.html">Proxima Temporada</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <main class="contenedor productos main_pt" id="productos">
         <div class="titulo-productos">
-
-            <h2 class="subtitulo">Calzados</h2>
+          <h2 class="subtitulo">Verano 22/23</h2>
         </div>
         <div class="contenedor-productos">
-            <img src="../imagenes/RAIN.jpg" alt="zapatos1" class="img-calzados">
-            <img src="../imagenes/RAIN.....jpg" alt="zapatos2" class="img-calzados">
-            <img src="../imagenes/RAIN..jpg" alt="zapatos3" class="img-calzados">
-            <img src="../imagenes/RAIN..jpg" alt="zapatos4" class="img-calzados">
-            <img src="../imagenes/RAIN..jpg" alt="zapatos5" class="img-calzados">
-            <img src="../imagenes/RAIN..jpg" alt="zapatos6" class="img-calzados">
-            <img src="../imagenes/RAIN..jpg" alt="zapatos7" class="img-calzados">
-            <img src="../imagenes/RAIN..jpg" alt="zapatos8" class="img-calzados">
+          <figure class="figure galeria_pr">
+            <img src="../imagenes/RAIN BEIGE.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          </figure>
+          <figure class="figure galeria_pr">
+            <img src="../imagenes/RAIN BEIGE.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          </figure>
+          <figure class="figure galeria_pr">
+            <img src="../imagenes/RAIN BEIGE.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          </figure>
+          <figure class="figure galeria_pr">
+            <img src="../imagenes/RAIN BEIGE.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          </figure>
+          <figure class="figure galeria_pr">
+            <img src="../imagenes/RAIN BEIGE.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          </figure>
+          <figure class="figure galeria_pr">
+            <img src="../imagenes/RAIN BEIGE.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          </figure>
         </div>
     </main>
-    <footer class="contenedor footer" id="footer">
-        <div class="coleccion">
-            <h2 class="titulo_footer">Colección</h2>
-            <div class="lista_footer">
-                <a href="./productos.html" target="_blank">Invierno 22/23</a>
-                <a href="./proximatemporada.html" target="_blank">Verano 22/23</a>
-            </div>
+    <div class="container px-4 py-5 iconos" id="hanging-icons">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Envíos</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          </div>
         </div>
-        <div class="institucional">
-            <h2 class="titulo_footer">Institucional</h2>
-            <div class="lista_footer">
-                <p> Sobre nosotros </p>
-                <p> Contactanos </p>
-                <p> Poiliticas de devolución </p>
-                <p> Showroom </p>
-            </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+              <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Showroom</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          </div>
         </div>
-        <div class="redes">
-            <h2 class="titulo_footer">Siguenos</h2>
-            <div class="lista_footer">
-                <a href="https://www.instagram.com/sohercalzados/" target="_blank">Instagram</a>
-                <a href="https://es-la.facebook.com/calzadosoher/" target="_blank">Facebook</a>
-                <a href="https://listado.mercadolibre.com.ar/calzadosoher" target="_blank">Mercado Libre</a>
-            </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Formas de pago</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+
+    <div class="container footer">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-2">
+            <h5>Colección</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Invierno 22/23</a></li>
+              <li class="nav-item mb-2"><a href="./proximatemporada.html" class="nav-link p-0 text-muted">Verano 22/23</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>Institucional</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">Contactanos</a></li>
+              <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-muted">Sobre Nosotros</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politicas de devolución</a></li>
+              <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-muted">Showroom</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>Redes</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://www.instagram.com/sohercalzados/" class="nav-link p-0 text-muted">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="https://es-la.facebook.com/calzadosoher/" class="nav-link p-0 text-muted">Facebook</a></li>
+              <li class="nav-item mb-2"><a href="https://listado.mercadolibre.com.ar/calzadosoher" class="nav-link p-0 text-muted">Mercado Libre</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-4 offset-1">
+            <form>
+              <h5>Subscribite a nuestro newsletter</h5>
+              <p>Resumen mensual de todas las novedades</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribite</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2022 SoHer, Inc. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
