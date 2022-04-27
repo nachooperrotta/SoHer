@@ -1,4 +1,4 @@
-@import "vars";
+@import "mapcolores";
 @import "page";
 
 .navbar{
@@ -23,7 +23,16 @@
     }
    
 }
-
+@mixin main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
 .head_fondo img{
     width: 100%;
     background-size: cover;
@@ -39,7 +48,7 @@
         padding-bottom: 6%;
         text-align: center;
         font-weight: 300;
-        color: $colorPrincipal;
+        color: map-get($map: $colores, $key: principal);
         margin-bottom: 40px;
         font-size: 40px;
     }
@@ -63,14 +72,14 @@
     }
     .n-nosotros{
         margin-bottom: 7px;
-        color: $colorPrincipal;
+        color: map-get($map: $colores, $key: principal);
     }
     .number{
         display: inline-block;
         background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%);
         width: 30px;
         height: 30px;
-        color: #fff;
+        color: map-get($map: $colores, $key: texto-contacto);
         text-align: center;
         border-radius: 50%;
         font-weight: 700;
@@ -79,43 +88,43 @@
     }
 }
 
+.main_pr{
+    @include main;
 
-.contenedor-productos{
-    background: #f2f2f2;
-    padding: 5%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 100px;
-
-    .galeria_pr{
-        transition: all 300ms;
-        cursor: pointer;
-
-        &:hover{
-            transform: scale(1.2);
+    .contenedor-productos{
+        background: map-get($map: $colores, $key: fondo);
+        padding: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 100px;
+    
+        .galeria_pr{
+            transition: all 300ms;
+            cursor: pointer;
+    
+            &:hover{
+                transform: scale(1.2);
+            }
         }
+        
     }
     
 }
-
+.subtitulo-productos{
+    @extend .subtitulo;
+}
 
 .main_pt{
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 20px;
+    @include main;
+
 
     .titulo_pt{
-        color: #9f8ad0;
+        color: map-get($map: $colores, $key: principal);
         font-size: 300%;
     }
     .subtitulo_pt{
-        color: $colorSecundario;
+        color: map-get($map: $colores, $key: secundario);
         font-size: 150%;
     }
 }
@@ -128,7 +137,7 @@
     padding: 6% 0;
 
     .video{
-        background: #f2f2f2;
+        background: map-get($map: $colores, $key: fondo);
         display: flex;
         margin-top: 100px;
         padding: 5%;
@@ -144,13 +153,13 @@
 
 .formulario{
     width: 400px;
-    background: #24303c;
+    background: map-get($map: $colores, $key: fondo-formulario);
     padding: 30px;
     margin: auto;
     margin-top: 70px;
     margin-bottom: 100px;
     border-radius: 4px;
-    color: white;
+    color: map-get($map: $colores, $key: texto-contacto);
     box-shadow: 7px 13px 37px #000;
 
     .controles{
@@ -159,17 +168,17 @@
         padding: 10px;
         border-radius: 4px;
         margin-bottom: 16px;
-        border: 1px solid $colorSecundario;
+        border: 1px solid map-get($map: $colores, $key: secundario);
     }
     & a{
-        color: white;
+        color: map-get($map: $colores, $key: texto-contacto);
     }
     & .botones{
         width: 100%;
-        background: $colorSecundario;
+        background: map-get($map: $colores, $key: secundario);
         border: none;
         padding: 12px;
-        color: white;
+        color: map-get($map: $colores, $key: texto-contacto);
         margin: 16px 0;
         font-size: 16px;
     }
