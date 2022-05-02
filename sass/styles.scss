@@ -9,20 +9,20 @@
 .iconos{
     margin-top: 10%;
 }
-
-@media (max-width: 952px){
-    .video{
-        flex-wrap: wrap;
-    }
-    .contenedor-nosotros{
-        flex-direction: column;
-        gap: 40px;
-    }
-    .new_home{
-        flex-direction: column;
-    }
-   
+.list-unstyled a{
+    text-decoration: none;
 }
+
+.formulario{
+    width: 800px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+}
+
+
 @mixin main {
     display: flex;
     flex-direction: column;
@@ -43,22 +43,22 @@
     overflow: hidden;
     margin: auto;
     padding: 6% 0;
-
+    
     .subtitulo{
-        padding-bottom: 6%;
+        padding-bottom: 2%;
         text-align: center;
         font-weight: 300;
         color: map-get($map: $colores, $key: principal);
         margin-bottom: 40px;
         font-size: 40px;
     }
-
+    
     .contenedor-nosotros{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-
+        
         & img{
             width: 40%;
         }
@@ -90,7 +90,7 @@
 
 .main_pr{
     @include main;
-
+    
     .contenedor-productos{
         background: map-get($map: $colores, $key: fondo);
         padding: 5%;
@@ -98,11 +98,11 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 100px;
-    
+        
         .galeria_pr{
             transition: all 300ms;
             cursor: pointer;
-    
+            
             &:hover{
                 transform: scale(1.2);
             }
@@ -117,7 +117,7 @@
 
 .main_pt{
     @include main;
-
+    
 
     .titulo_pt{
         color: map-get($map: $colores, $key: principal);
@@ -128,6 +128,14 @@
         font-size: 150%;
     }
 }
+.subtitulo-nosotros{
+    padding-bottom: 2%;
+    text-align: center;
+    font-weight: 300;
+    color: map-get($map: $colores, $key: principal);
+    margin-bottom: 40px;
+    font-size: 40px;
+}
 
 .box{
     width: 95%;
@@ -135,7 +143,7 @@
     overflow: hidden;
     margin: auto;
     padding: 6% 0;
-
+    
     .video{
         background: map-get($map: $colores, $key: fondo);
         display: flex;
@@ -150,47 +158,23 @@
 .titulo-contacto{
     margin-top: 100px;
 }
-
-.formulario{
-    width: 400px;
-    background: map-get($map: $colores, $key: fondo-formulario);
-    padding: 30px;
-    margin: auto;
-    margin-top: 70px;
-    margin-bottom: 100px;
-    border-radius: 4px;
-    color: map-get($map: $colores, $key: texto-contacto);
-    box-shadow: 7px 13px 37px #000;
-
-    .controles{
-        width: 100%;
-        background: #24303c;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid map-get($map: $colores, $key: secundario);
-    }
-    & a{
-        color: map-get($map: $colores, $key: texto-contacto);
-    }
-    & .botones{
-        width: 100%;
-        background: map-get($map: $colores, $key: secundario);
-        border: none;
-        padding: 12px;
-        color: map-get($map: $colores, $key: texto-contacto);
-        margin: 16px 0;
-        font-size: 16px;
-    }
-    .archivo{
-        padding-top: 20px;
-    }
-    .terminos{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+.subtitulo-contacto{
+    @extend .subtitulo;
 }
 
-.footer{
-    padding-top: 5%;
+@media (max-width: 952px){
+    .video{
+        flex-wrap: wrap;
+    }
+    .contenedor-nosotros{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .new_home{
+        flex-direction: column;
+    }
+    .formulario{
+        width: 400px;
+    }
+   
 }

@@ -18,24 +18,17 @@
   margin-top: 10%;
 }
 
-@media (max-width: 952px) {
-  .video {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contenedor-nosotros {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 40px;
-  }
-  .new_home {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.list-unstyled a {
+  text-decoration: none;
+}
+
+.formulario {
+  width: 800px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  border-radius: 4px;
 }
 
 .head_fondo img {
@@ -51,8 +44,8 @@
   padding: 6% 0;
 }
 
-.contenedor .subtitulo, .contenedor .subtitulo-productos {
-  padding-bottom: 6%;
+.contenedor .subtitulo, .contenedor .subtitulo-productos, .contenedor .subtitulo-contacto {
+  padding-bottom: 2%;
   text-align: center;
   font-weight: 300;
   color: #9f8ad0;
@@ -172,6 +165,15 @@
   font-size: 150%;
 }
 
+.subtitulo-nosotros {
+  padding-bottom: 2%;
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
 .box {
   width: 95%;
   max-width: 1500px;
@@ -201,52 +203,26 @@
   margin-top: 100px;
 }
 
-.formulario {
-  width: 400px;
-  background: #24303c;
-  padding: 30px;
-  margin: auto;
-  margin-top: 70px;
-  margin-bottom: 100px;
-  border-radius: 4px;
-  color: white;
-  -webkit-box-shadow: 7px 13px 37px #000;
-          box-shadow: 7px 13px 37px #000;
-}
-
-.formulario .controles {
-  width: 100%;
-  background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid red;
-}
-
-.formulario a {
-  color: white;
-}
-
-.formulario .botones {
-  width: 100%;
-  background: red;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-}
-
-.formulario .archivo {
-  padding-top: 20px;
-}
-
-.formulario .terminos {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.footer {
-  padding-top: 5%;
+@media (max-width: 952px) {
+  .video {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contenedor-nosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  .new_home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formulario {
+    width: 400px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
