@@ -128,6 +128,9 @@
         font-size: 150%;
     }
 }
+.maps{
+    text-align: center;
+}
 .subtitulo-nosotros{
     padding-bottom: 2%;
     text-align: center;
@@ -159,7 +162,10 @@
     margin-top: 100px;
 }
 .subtitulo-contacto{
-    @extend .subtitulo;
+    text-align: center;
+    font-weight: 300;
+    color: map-get($map: $colores, $key: principal);
+    font-size: 40px;
 }
 
 @media (max-width: 952px){

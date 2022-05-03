@@ -6,6 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -44,7 +45,7 @@
   padding: 6% 0;
 }
 
-.contenedor .subtitulo, .contenedor .subtitulo-productos, .contenedor .subtitulo-contacto {
+.contenedor .subtitulo, .contenedor .subtitulo-productos {
   padding-bottom: 2%;
   text-align: center;
   font-weight: 300;
@@ -165,6 +166,10 @@
   font-size: 150%;
 }
 
+.maps {
+  text-align: center;
+}
+
 .subtitulo-nosotros {
   padding-bottom: 2%;
   text-align: center;
@@ -201,6 +206,13 @@
 
 .titulo-contacto {
   margin-top: 100px;
+}
+
+.subtitulo-contacto {
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+  font-size: 40px;
 }
 
 @media (max-width: 952px) {
