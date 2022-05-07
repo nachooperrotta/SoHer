@@ -23,20 +23,6 @@
   text-decoration: none;
 }
 
-.formulario {
-  width: 800px;
-  padding: 30px;
-  margin: auto;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  border-radius: 4px;
-}
-
-.head_fondo img {
-  width: 100%;
-  background-size: cover;
-}
-
 .contenedor {
   width: 90%;
   max-width: 1200px;
@@ -115,6 +101,15 @@
   margin-bottom: 20px;
 }
 
+.main_pr .subtitulo-productos {
+  padding-bottom: 2%;
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
 .main_pr .contenedor-productos {
   background: #f2f2f2;
   padding: 5%;
@@ -138,15 +133,6 @@
 .main_pr .contenedor-productos .galeria_pr:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.subtitulo-productos {
-  padding-bottom: 2%;
-  text-align: center;
-  font-weight: 300;
-  color: #9f8ad0;
-  margin-bottom: 40px;
-  font-size: 40px;
 }
 
 .main_pt {
@@ -175,25 +161,21 @@
   font-size: 150%;
 }
 
-.maps {
-  text-align: center;
-}
-
-.subtitulo-nosotros {
-  padding-bottom: 2%;
-  text-align: center;
-  font-weight: 300;
-  color: #9f8ad0;
-  margin-bottom: 40px;
-  font-size: 40px;
-}
-
 .box {
   width: 95%;
   max-width: 1500px;
   overflow: hidden;
   margin: auto;
   padding: 6% 0;
+}
+
+.box .subtitulo-nosotros {
+  padding-bottom: 2%;
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
 .box .video {
@@ -213,15 +195,28 @@
           flex-direction: column;
 }
 
-.titulo-contacto {
+.box .maps {
+  text-align: center;
+}
+
+.main-contacto .titulo-contacto {
   margin-top: 100px;
 }
 
-.subtitulo-contacto {
+.main-contacto .titulo-contacto .subtitulo-contacto {
   text-align: center;
   font-weight: 300;
   color: #9f8ad0;
   font-size: 40px;
+}
+
+.main-contacto .formulario {
+  width: 800px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  border-radius: 4px;
 }
 
 @media (max-width: 952px) {

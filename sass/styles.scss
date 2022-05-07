@@ -13,14 +13,7 @@
     text-decoration: none;
 }
 
-.formulario{
-    width: 800px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    border-radius: 4px;
-}
+
 
 
 @mixin main {
@@ -33,10 +26,7 @@
     font-weight: 400;
     margin-bottom: 20px;
 }
-.head_fondo img{
-    width: 100%;
-    background-size: cover;
-}
+
 .contenedor{
     width: 90%;
     max-width: 1200px;
@@ -91,6 +81,15 @@
 .main_pr{
     @include main;
     
+    .subtitulo-productos{
+        padding-bottom: 2%;
+        text-align: center;
+        font-weight: 300;
+        color: map-get($map: $colores, $key: principal);
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
     .contenedor-productos{
         background: map-get($map: $colores, $key: fondo);
         padding: 5%;
@@ -111,14 +110,6 @@
     }
     
 }
-.subtitulo-productos{
-    padding-bottom: 2%;
-    text-align: center;
-    font-weight: 300;
-    color: map-get($map: $colores, $key: principal);
-    margin-bottom: 40px;
-    font-size: 40px;
-}
 
 .main_pt{
     @include main;
@@ -135,24 +126,21 @@
     
 }
 
-.maps{
-    text-align: center;
-}
-.subtitulo-nosotros{
-    padding-bottom: 2%;
-    text-align: center;
-    font-weight: 300;
-    color: map-get($map: $colores, $key: principal);
-    margin-bottom: 40px;
-    font-size: 40px;
-}
-
 .box{
     width: 95%;
     max-width: 1500px;
     overflow: hidden;
     margin: auto;
     padding: 6% 0;
+
+    .subtitulo-nosotros{
+        padding-bottom: 2%;
+        text-align: center;
+        font-weight: 300;
+        color: map-get($map: $colores, $key: principal);
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
     
     .video{
         background: map-get($map: $colores, $key: fondo);
@@ -164,16 +152,34 @@
     .descripcion-video{
         flex-direction: column;
     }
+
+    .maps{
+        text-align: center;
+    }
 }
-.titulo-contacto{
-    margin-top: 100px;
+
+.main-contacto{
+    .titulo-contacto{
+        margin-top: 100px;
+    
+        .subtitulo-contacto{
+            text-align: center;
+            font-weight: 300;
+            color: map-get($map: $colores, $key: principal);
+            font-size: 40px;
+        }
+    }
+    .formulario{
+        width: 800px;
+        padding: 30px;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        border-radius: 4px;
+    }
 }
-.subtitulo-contacto{
-    text-align: center;
-    font-weight: 300;
-    color: map-get($map: $colores, $key: principal);
-    font-size: 40px;
-}
+
+
 
 @media (max-width: 952px){
     .video{
