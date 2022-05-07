@@ -45,7 +45,7 @@
   padding: 6% 0;
 }
 
-.contenedor .subtitulo, .contenedor .subtitulo-productos {
+.contenedor .subtitulo {
   padding-bottom: 2%;
   text-align: center;
   font-weight: 300;
@@ -138,6 +138,15 @@
 .main_pr .contenedor-productos .galeria_pr:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.subtitulo-productos {
+  padding-bottom: 2%;
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
 .main_pt {

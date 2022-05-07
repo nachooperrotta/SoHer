@@ -7,9 +7,9 @@
     <title>SoHer calzados</title>
     <meta name="description" content="Tienda mayorista de calzado de moda femenino">
     <meta name="keywords" content="ZAPATOS, SOHER, CALZADO, FEMENINO, MODA, MAYORISTA">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
@@ -17,27 +17,40 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">SoHer Calzados</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SOHER</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <header>
+    <style>
+      #intro-example {
+        height: 400px;
+      }
+      @media (min-width: 992px) {
+        #intro-example {
+          height: 600px;
+        }
+      }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./paginas/productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./paginas/proximatemporada.html">Proxima Temporada</a>
+              <a class="nav-link" href="./paginas/proximatemporada.html">Proxima temporada</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
@@ -46,116 +59,135 @@
               <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="intro-example" class="p-5 text-center bg-image" style="background-image: url('imagenes/Fondo\ piola.png'); height: 1000px;">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">SoHer</h1>
+          <h5 class="mb-4">Colección 22/23</h5>
+          <a class="btn btn-outline-light btn-lg m-2" href="./paginas/productos.html" role="button" rel="nofollow" target="_blank">Invierno</a>
+          <a class="btn btn-outline-light btn-lg m-2" href="./paginas/proximatemporada.html" target="_blank" role="button">Verano</a>
         </div>
       </div>
     </div>
-  </nav>
-  <main class="head">
-      <div class="head_fondo">
-          <img src="./imagenes/Fondo piola.png" alt="Fondo">
-      </div>
-  </main>
-      <section class="Nosotros contenedor" id="Nosotros">
-          <h2 class="subtitulo">Nosotros</h2>
-          <div class="contenedor-nosotros">
-              <img src="./imagenes/Neon.jpg" alt="art. 4">
-              <div class="checklist-nosotros">
-                  <div class="nosotros">
-                      <h3 class="n-nosotros"><span class="number">1</span>Calidad del Calzado</h3>
-                      <p>En SoHer, priorizamos siempre hacer el mejor calzado, ya sea, por el confort como por la durabilidad del mismo, por eso trabajamos con la mejor calidad que existe en el mercado.</p>
-                  </div>
-                  <div class="nosotros">
-                    <h3 class="n-nosotros"><span class="number">2</span>Atención al cliente</h3>
-                   <p>Brindamos el mejor soporte, nos podes escribir ya sea a nuestro Whatsapp, como via mail y nosotros te responderemos lo mas rapido posible.</p>
-                  </div>
-                  <div class="nosotros">
-                      <h3 class="n-nosotros"><span class="number">3</span>Seguridad</h3>
-                      <p>Tenemos muchas revendedores que nos abalan y ofrecemos la posibilidad de ver los productos en persona para mas seguridad del comprador. </p>
-                  </div>
-              </div>
-          </div>
-      </section>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide contenedor" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./imagenes/Reyna.jpg" class="d-block w-100" alt="art. 1">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Art. 1</h5>
-                <p>BOTA CAÑA CORTA TREBOL EN CUERO GRANEADO.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./imagenes/Sage.jpg" class="d-block w-100" alt="art. 2">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Art. 2</h5>
-                <p>BORCEGO IVY EN CUERO GRANEADO.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./imagenes/Viper.jpg" class="d-block w-100" alt="art. 3">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Art. 3</h5>
-                <p>BOTA CAÑA CORTA ICEBERG EN NYLON.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+    </div>
+  </header>
 
-        <div class="container px-4 py-5 iconos" id="hanging-icons">
-          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="col d-flex align-items-start">
-              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-                </svg>
-              </div>
-              <div>
-                <h2>Envíos</h2>
-                <p>Ofrecemos envíos a todo el país. Consultar por los precios. Envío gratis a todo CABA y alrededores.</p>
-              </div>
+    <section class="Nosotros contenedor" id="Nosotros">
+      <h2 class="subtitulo">Nosotros</h2>
+      <div class="contenedor-nosotros">
+          <img src="./imagenes/Neon.jpg" alt="art. 4">
+          <div class="checklist-nosotros">
+            <div class="nosotros">
+              <h3 class="n-nosotros"><span class="number">1</span>Calidad del Calzado</h3>
+              <p><strong>En SoHer, priorizamos siempre hacer el mejor calzado, ya sea, por el confort como por la durabilidad del mismo, por eso trabajamos con la mejor calidad que existe en el mercado.</strong></p>
             </div>
-            <div class="col d-flex align-items-start showroom">
-              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
-                  <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                </svg>
-              </div>
-              <div>
-                <h2>Showroom</h2>
-                <p>Poseemos nuestro propio showroom para compras por menor.</p>
-              </div>
+            <div class="nosotros">
+              <h3 class="n-nosotros"><span class="number">2</span>Atención al cliente</h3>
+              <p><strong>Brindamos el mejor soporte, nos podes escribir ya sea a nuestro Whatsapp, como via mail y nosotros te responderemos lo mas rapido posible.</strong></p>
             </div>
-            <div class="col d-flex align-items-start">
-              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
-                  <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
-                </svg>
-              </div>
-              <div>
-                <h2>Formas de pago</h2>
-                <p>Se trabaja mediante seña para compras mayoristas, se puede abonar tanto en efectivo, como por transferencia bancaria. Con su factura correspondiente.</p>
-              </div>
+            <div class="nosotros">
+              <h3 class="n-nosotros"><span class="number">3</span>Seguridad</h3>
+              <p><strong>Tenemos muchas revendedores que nos abalan y ofrecemos la posibilidad de ver los productos en persona para mas seguridad del comprador.</strong></p>
             </div>
           </div>
+      </div>
+    </section>
+
+    <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark contenedor" data-mdb-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          data-mdb-target="#carouselDarkVariant"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          data-mdb-target="#carouselDarkVariant"
+          data-mdb-slide-to="1"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          data-mdb-target="#carouselDarkVariant"
+          data-mdb-slide-to="2"
+          aria-label="Slide 1"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/Reyna.jpg" class="d-block w-100" alt="art. 1"/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Art. 1</h5>
+            <p>BOTA CAÑA CORTA TREBOL EN CUERO GRANEADO.</p>
+          </div>
         </div>
+        <div class="carousel-item">
+          <img src="./imagenes/Sage.jpg" class="d-block w-100" alt="art. 2"/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Art. 2</h5>
+            <p>BORCEGO IVY EN CUERO GRANEADO.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/Viper.jpg" class="d-block w-100" alt="art. 3"/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Art. 3</h5>
+            <p>BOTA CAÑA CORTA ICEBERG EN NYLON.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container px-4 py-5 iconos" id="hanging-icons">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Envíos</h2>
+            <p>Ofrecemos envíos a todo el país. Consultar por los precios. Envío gratis a todo CABA y alrededores.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start showroom">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+              <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Showroom</h2>
+            <p>Poseemos nuestro propio showroom para compras por menor.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Formas de pago</h2>
+            <p>Se trabaja mediante seña para compras mayoristas, se puede abonar tanto en efectivo, como por transferencia bancaria. Con su factura correspondiente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
         
   <footer class="bg-dark text-center text-white">
     <div class="container p-4">
@@ -163,9 +195,7 @@
         <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/calzadosoher/" role="button"
           ><i class="fab fa-facebook-f"></i
         ></a>
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/sohercalzados/" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/sohercalzados/" role="button"><i class="fab fa-instagram"></i></a>
       </section>
       <section class="">
         <form action="">

@@ -112,7 +112,12 @@
     
 }
 .subtitulo-productos{
-    @extend .subtitulo;
+    padding-bottom: 2%;
+    text-align: center;
+    font-weight: 300;
+    color: map-get($map: $colores, $key: principal);
+    margin-bottom: 40px;
+    font-size: 40px;
 }
 
 .main_pt{
@@ -127,7 +132,9 @@
         color: map-get($map: $colores, $key: secundario);
         font-size: 150%;
     }
+    
 }
+
 .maps{
     text-align: center;
 }
