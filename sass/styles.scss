@@ -91,12 +91,11 @@
     }
 
     .contenedor-productos{
-        background: map-get($map: $colores, $key: fondo);
         padding: 5%;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        gap: 100px;
+        gap: 50px;
         
         .galeria_pr{
             transition: all 300ms;
@@ -182,17 +181,14 @@
 
 
 @media (max-width: 952px){
-    .video{
+    .box .video{
         flex-wrap: wrap;
     }
-    .contenedor-nosotros{
+    .contenedor .contenedor-nosotros{
         flex-direction: column;
         gap: 40px;
     }
-    .new_home{
-        flex-direction: column;
-    }
-    .formulario{
+    .main-contacto .formulario{
         width: 400px;
     }
    

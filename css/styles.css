@@ -111,7 +111,6 @@
 }
 
 .main_pr .contenedor-productos {
-  background: #f2f2f2;
   padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +120,7 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 100px;
+  gap: 50px;
 }
 
 .main_pr .contenedor-productos .galeria_pr {
@@ -220,24 +219,18 @@
 }
 
 @media (max-width: 952px) {
-  .video {
+  .box .video {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .contenedor-nosotros {
+  .contenedor .contenedor-nosotros {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 40px;
   }
-  .new_home {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .formulario {
+  .main-contacto .formulario {
     width: 400px;
   }
 }
